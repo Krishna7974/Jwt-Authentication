@@ -2,7 +2,6 @@ package com.in.StudentAuth.service;
 
 import com.in.StudentAuth.model.Student;
 import com.in.StudentAuth.repository.StudentRepository;
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

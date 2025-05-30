@@ -8,7 +8,6 @@ import com.in.StudentAuth.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.core.Authentication;
@@ -20,7 +19,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 
 @RestController
@@ -38,7 +36,6 @@ public class StudentController {
 
     @GetMapping("/getAll")
     public ResponseEntity<?> getStudent() {
-        System.out.println("Get method called");
         List<Student> students = studentService.getStd();
         return new ResponseEntity<>(students, HttpStatus.OK);
     }
