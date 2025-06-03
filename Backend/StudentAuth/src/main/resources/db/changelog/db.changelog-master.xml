@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+<!--    <changeSet id="2" author="krishna">-->
+<!--        <createTable tableName="student">-->
+<!--            <column name="id" type="int" autoIncrement="true">-->
+<!--                <constraints primaryKey="true"/>-->
+<!--            </column>-->
+<!--            <column name="name" type="varchar(255)"/>-->
+<!--            <column name="email" type="varchar(255)"/>-->
+<!--        </createTable>-->
+<!--        <comment>Adding new column</comment>-->
+<!--        <addColumn tableName="student">-->
+<!--            <column name="address" type="varchar(255)"/>-->
+<!--        </addColumn>-->
+<!--    </changeSet>-->
+
+<!--    <changeSet id="4" author="krishna">-->
+<!--        <addColumn tableName="student">-->
+<!--            <column name="address" type="varchar(255)"/>-->
+<!--        </addColumn>-->
+<!--        <comment>Adding column Address</comment>-->
+<!--    </changeSet>-->
+<!--    <changeSet id="5" author="krishna">-->
+<!--        <insert tableName="student">-->
+<!--            <column name="name" value="Pawan"/>-->
+<!--            <column name="email" value="pawan@gamil.com"/>-->
+<!--            <column name="password" value="pawan12"/>-->
+<!--            <column name="address" value="Indore"/>-->
+<!--        </insert>-->
+<!--    </changeSet>-->
+<!--    <changeSet id="7" author="krishna">-->
+<!--        <comment>updating address for id 6</comment>-->
+<!--        <update tableName="student">-->
+<!--            <column name="address" value="Mundi"/>-->
+<!--            <where>id=6</where>-->
+<!--        </update>-->
+<!--    </changeSet>-->
+<!--    <changeSet id="8" author="krishna">-->
+<!--        <delete tableName="student">-->
+<!--            <where>id=6</where>-->
+<!--        </delete>-->
+<!--        <comment>row deleted for id 6</comment>-->
+<!--    </changeSet>-->
+<!--    <changeSet id="9" author="krishna">-->
+<!--        <createIndex tableName="student" indexName="ind_email">-->
+<!--            <column name="email"/>-->
+<!--        </createIndex>-->
+<!--        <comment>index is created for email column</comment>-->
+<!--    </changeSet>-->
+<!--    <changeSet id="10" author="krishna">-->
+<!--        <comment>adding Age column</comment>-->
+<!--        <sql>alter table student add column age int</sql>-->
+<!--    </changeSet>-->
+    <changeSet id="11" author="krishna">
+        <sql>insert into student values(6,"vinay","vinay@gmail.com","vinay12","Indore",12)</sql>
+        <comment>Inserting values using sql query</comment>
+    </changeSet>
+</databaseChangeLog>
